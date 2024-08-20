@@ -1,0 +1,90 @@
+/* @import "components/variables";
+@import "components/reset";
+@import "components/font"; */
+@use "components/variables";
+@use 'components/reset';
+@use "components/font";
+
+body {
+  align-items: center;
+  background: variables.$main-bg-color;
+  color: variables.$text-color;
+  display: flex;
+  justify-content: center;
+  height: 106vh;
+}
+
+.container {
+    background: variables.$semi-bg-color;
+    width: 280px;
+    margin: 30px auto;
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 11px;
+
+    figure {
+      margin: 10px auto;
+      width: 30%;
+      height: auto;
+
+      img {
+        border: 3px solid variables.$text-color;
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    h2 {
+      color: variables.$text-color;
+      font-family: font.$inter;
+      margin: 5px auto;
+    }
+
+    h5 {
+      color: variables.$green-color;
+      font-family: font.$inter;
+      font-weight: 400;
+      font-size: 0.900rem;
+      margin-bottom: 21px;
+    }
+
+    p {
+      color: variables.$text-color;
+      font-family: font.$inter;
+      font-size: 0.750rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        margin: 8px auto;
+        font-weight: 600;
+        font-family: font.$inter;
+        padding: 11px 5px;
+        background: variables.$button-bg-color;
+        border: none;
+        color: variables.$text-color;
+        border-radius: 8px;
+        font-size: 0.800rem;
+        transition: .450s ease-in-out;
+        cursor: pointer;
+      }
+      button:hover,
+      button:focus {
+        background: variables.$green-color;
+        color: variables.$main-bg-color;
+      }
+
+    }
+
+}

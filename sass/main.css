@@ -1,0 +1,110 @@
+/* @import "components/variables";
+@import "components/reset";
+@import "components/font"; */
+/* colors */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-weight: 700;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/social-links-profile-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+  align-items: center;
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  height: 106vh;
+}
+
+.container {
+  background: hsl(0, 0%, 12%);
+  width: 280px;
+  margin: 30px auto;
+  max-width: 800px;
+  height: auto;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 11px;
+}
+.container figure {
+  margin: 10px auto;
+  width: 30%;
+  height: auto;
+}
+.container figure img {
+  border: 3px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.container h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  margin: 5px auto;
+}
+.container h5 {
+  color: hsl(75, 94%, 57%);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 21px;
+}
+.container p {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.container .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .btn button {
+  width: 100%;
+  margin: 8px auto;
+  font-weight: 600;
+  font-family: "Inter";
+  padding: 11px 5px;
+  background: hsl(0, 0%, 20%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transition: 0.45s ease-in-out;
+  cursor: pointer;
+}
+.container .btn button:hover,
+.container .btn button:focus {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=main.css.map */
